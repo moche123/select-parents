@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill">
+    <mat-label>Select 1</mat-label>
+
+    <mat-select [(ngModel)]="optionSelected.value" >
+      <mat-option *ngFor="let option of options" [value]="option.value" (click)="selectOptionFunction(option)">
+        {{option.viewValue}}
+      </mat-option>
+     
+    </mat-select>
+  </mat-form-field>
